@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet"> 
+    
+        <title>Quattro Stagioni - Contactez-nous</title>
+    </head>
+<body class="parallax parallax-contact">
+    <header>
+        <nav class="navbar  sticky-top navbar-light navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a style="color:#fff;" class="navbar-brand" href="#">Quattro Staggioni</a>
+                <button  class="navbar-toggler" style="border-color: lightgreen; color:#fff !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span  class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link mx-4" aria-current="page" href="../../index.html">Bienvenue</a></li>
+                        <li class="nav-item"><a class="nav-link mx-4 " aria-current="page" href="./restaurants.html">Les Restaurants</a></li>
+                        <li class="nav-item"><a class="nav-link mx-4" aria-current="page" href="./carte.html">La Carte</a></li>
+                        <li class="nav-item"><a class="nav-link mx-4" aria-current="page" href="./galeries.html">Galleries</a></li>
+                        <li class="nav-item"><a class="nav-link mx-4 active" aria-current="page" href="./reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <form class="row g-3 needs-validation custom-centered bg bg-form bg-reservation my-5" action="#">
+          <h1 class="text-white text-center">Réservez une table</h1>
+          <p  class="text-white text-center">Remplissez le formulaire ci-dessous, ou réservez <br/> par téléphone +32 (0) 493 55 73 37</p>
+          <div class="col-md-6">
+            <h3 class="text-white">Réserver une table</h3>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-white">Coordonnées</h3>
+          </div>
+          <div class="col-md-6">
+            <label for="validationLastname" class="form-label text-white">Date</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="validationLastname" class="form-label text-white">Nom</label>
+            <input type="text" class="form-control" id="validationLastname" placeholder="Votre Nom" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationLastname" class="form-label text-white">Heure</label>
+            <input type="time" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustomUsername" class="form-label text-white">Votre Email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend text-success">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" placeholder="email@exemple.com" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationLastname" class="form-label text-white">Nombres de personnes</label>
+            <input type="number" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="validationLastname" class="form-label text-white">Téléphone</label>
+            <input type="tel" class="form-control" >
+          </div>
+          <div class="col-12">
+            <label for="validationEtablissement" class="form-label text-white">Etablissements</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Choisisez l'établissements</option>
+              <option value="1">Restaurant 1</option>
+              <option value="2">Restaurant 2</option>
+              <option value="3">Restaurant 3</option>
+              <option value="4">Restaurant 3</option>
+            </select>
+          </div>
+           <div class="col-md-12">
+            <label for="validationLastname" class="form-label text-white">Commentaire</label>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+          </div>
+          <div class="col-12 text-white">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Accepter les termes et conditions 
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-danger" type="submit">Réservez <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+              <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg></button>
+          </div>
+        </form>
+        <footer class="text-center">
+          <p Cover template for> <a href="https://getbootstrap.com/" class="text-white py-2">Designed by <a href="https://twitter.com/mdo" class="text-white">@rtephakt Studio</a>.</p>
+       </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
